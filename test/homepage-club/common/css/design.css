@@ -1,0 +1,519 @@
+/* CSS Document */
+/*-----------------------------------------------------------
+ フォントサイズの指定はYUI Fontsに基づき
+ 下記テーブルで指定します
+ |px|%|
+ |10|77|
+ |11|85|
+ |12|93|
+ |13|100|
+ |14|108|
+ |15|116|
+ |16|123.1|
+ |17|131|
+ |18|138.5|
+ |19|146.5|
+ |20|153.9|
+ |21|161.6|
+ |22|167|
+ |23|174|
+ |24|182|
+ |25|189|
+ |26|197|
+ ex) 12px
+ element {
+ 	font-size: 93%;
+ }
+ ------------------------------------------------------------*/
+body {
+	margin:0 auto;
+	padding:0px 0 0 ;
+	text-align:center;
+	background:#E0F7FA;
+	color:#444444;
+	font-family:'游ゴシック','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4','meirio','メイリオ','ＭＳ Ｐゴシック',sans-serif;
+}
+
+
+a:link,a:visited {
+	color:#4D82C4;
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	color:#CC4866;
+}
+
+blockquote {
+	margin:1em 0px;
+	padding:15px;
+	border:#A1DCE4 solid 3px;
+}
+
+hr {
+   border-width: 2px 0px 0px 0px;
+   border:solid #A1DCE4 2px;
+}
+
+
+/*外枠設定=====================================*/
+#wrapper {
+	margin:15px auto;
+	padding:0;
+	width:1000px;
+	text-align:left;
+	background:#FFF;
+}
+
+/*ヘッダー設定=================================*/
+#headerWrapper {
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+#header {
+	height:170px;
+	position:relative;
+}
+
+/*サイトタイトル*/
+.siteTitle {
+	position:absolute;
+	top:50px;
+	left:20px;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+}
+
+.siteTitle #blue{
+	color:#1565C0;
+}
+
+.siteTitle #green{
+  color:#2E7D32;
+}
+
+.siteTitle #red{
+  color:#c62828;
+}
+
+.siteTitle #purple{
+	color:#6A1B9A;
+}
+
+/*概要*/
+.description {
+	position:absolute;
+	top:45px;
+	right:20px;
+	margin:0;
+	padding:0;
+	font-size:77%;
+}
+
+/*グローバルナビゲーション*/
+.navi {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	height:50px;
+	line-height:50px;
+	width:960px;
+	border-bottom:#E9EDEC 5px solid;
+}
+
+.navi ul {
+	position:absolute;
+	top:0;
+	left:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	height:50px;
+	width:960px;
+}
+
+.navi ul li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	height:50px;
+}
+
+.navi ul li a{
+	text-decoration:none;
+	padding:10px 0px 5px;
+	width:160px;
+	display:block;
+	background:#F7F7F7;
+	border-bottom:#E9EDEC 5px solid;
+}
+
+.navi ul li a .titleJa {
+	display:block;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	font-size:100%;
+}
+
+.navi ul li a .titleEn {
+	display:block;
+	height:17px;
+	line-height:17px;
+	text-align:center;
+	font-size:77%;
+}
+
+.navi ul li a:link,
+.navi ul li a:visited{
+}
+
+.navi ul li a:link .titleJa,
+.navi ul li a:visited .titleJa{
+	color:#000;
+}
+
+.navi ul li a:link .titleEn,
+.navi ul li a:visited .titleEn{
+	color:#999;
+}
+
+.navi ul li a:hover,
+.navi ul li a:active{
+	border-bottom:#A1DCE4 solid 5px;
+}
+
+.navi ul li a:hover .titleJa,
+.navi ul li a:active .titleJa{
+}
+
+.navi ul li a:hover .titleEn,
+.navi ul li a:active .titleEn{
+}
+
+/* スライダー設定(トップページのみ) ==================*/
+
+#sliderWrapper {
+	position:relative;
+	margin:20px;
+	padding:0;
+}
+
+#slider {
+	width:960px;
+	height:220px;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+}
+
+#slider #sliderItem  {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 4600px;
+	left:0px;
+	top: 0px;
+}
+
+#slider #sliderItem li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:960px;
+	height:220px;
+	float:left;
+}
+
+#slider #sliderItem li{
+	z-index:80;
+	display:block;
+}
+
+#slider #sliderItem li img {
+	width:960px;
+	height:220px;
+}
+
+#sliderWrapper .leftBtn {
+	position:absolute;
+	width:44px;
+	height:44px;
+	top:88px;
+	left:-12px;
+	z-index:80;
+}
+
+#sliderWrapper .rightBtn {
+	position:absolute;
+	width:44px;
+	height:44px;
+	top:88px;
+	right:-12px;
+	z-index:80;
+}
+
+/*メインエリア設定=====================================*/
+
+#contentsWrapper {
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+
+#contents {
+	margin:0 auto;
+	padding:0;
+	width:960px;
+}
+
+/*フッター設定=====================================*/
+
+
+#footerWrapper {
+	width:960px;
+	text-align:left;
+	margin:0 auto 20px;
+	text-align:center;
+	border-left:20px #fff solid;
+	border-right:20px #fff solid;
+	background:#FFF;
+}
+
+#footer {
+	position:relative;
+}
+
+#footerMenu ul {
+	position:relative;
+	margin:0 -20px;
+	padding:0 0 0 20px;
+	height:30px;
+	list-style:none;
+	background:#A1DCE4;
+	margin:0 -20px;
+}
+
+#footerMenu ul li{
+	padding:0 20px 0 30px;
+	list-style:none;
+	float:left;
+	height:30px;
+	line-height:30px;
+	background:url(../images/bgFooterIcon.png) left center no-repeat;
+}
+
+#footerMenu ul a{
+	height:30px;
+	line-height:30px;
+	color:#444444;
+	text-decoration:none;
+}
+
+#footerMenu ul a:hover{
+	text-decoration:underline;
+}
+
+.footerAddress {
+	text-align:right;
+	height:50px;
+	line-height:50px;
+}
+
+#footer .copyright {
+	position:relative;
+	margin:0 -20px;
+	padding:15px 10px ;
+	text-align:center;
+	font-size:93%;
+	background:#F2FFFE;
+}
+
+/*トップページ=====================================*/
+#main .news dl {
+	margin: 0 0 15px;
+	padding: 0 10px 10px;
+	border: 4px #EEEEEE solid;
+}
+
+#main .news dl dt {
+	float: left;
+	width: 11em;
+	padding: 10px 0;
+	font-weight: bold;
+	line-height: 150%;
+	margin:0;
+}
+#main .news dl dd {
+	padding: 10px 10px 10px 0;
+	line-height: 150%;
+	border-bottom: 1px #CCCCCC dotted;
+	margin:0;
+}
+
+#main .news .category {
+	background:#666;
+	margin:0 5px 0 0;
+	padding:0 5px;
+	color:#FFF;
+}
+
+
+
+/*共通設定=====================================*/
+
+/*パンくずリスト*/
+.panList {
+	height:30px;
+	line-height:30px;
+	font-size:60%;
+	color:#000;
+}
+
+.subMidashi {
+	height:40px;
+	padding:0 0 5px 0;
+	margin:0 0 15px;
+	border-bottom:#A1DCE4 dotted 1px;
+	border-top:#A1DCE4 dotted 1px;
+	font-weight:normal;
+	position:relative;
+	font-size:123.1%;
+}
+
+.subMidashi .midashiText{
+	position:absolute;
+	color:#333;
+	background:url(../images/bgMidashiIcon.png) 6px center no-repeat;
+	line-height:40px;
+	height:40px;
+	padding:0 20px 0 38px;
+	display:inline-block;
+	border-bottom:#A1DCE4 solid 5px;
+	top:0;
+}
+
+
+.pageTitle {
+	margin:0 0 20px;
+	padding:0 0 0 20px;
+	height:60px;
+	line-height:60px;
+	background:#A1DCE4;
+	font-weight:normal;
+}
+
+.textBox {
+	padding:10px;
+}
+
+.photo {
+	float:left;
+	margin:0 20px 0 0;
+}
+
+.companyTable table,
+.recruitTable table {
+	border-top:solid #E9EDEC 1px;
+	border-left:solid #E9EDEC 1px;
+	width:100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin:0 0 20px;
+}
+
+.companyTable table th,
+.recruitTable table th{
+	border-bottom:solid #E9EDEC 1px;
+	border-right:solid #E9EDEC 1px;
+	text-align:left;
+	background:#D5EFF3;
+	padding:10px;
+	font-weight:normal;
+}
+
+.companyTable table td,
+.recruitTable table td{
+	border-bottom:solid #E9EDEC 1px;
+	border-right:solid #E9EDEC 1px;
+	padding:10px;
+}
+
+
+
+#main {
+	float:left;
+	width:620px;
+}
+
+#menu {
+	float:right;
+	width:300px;
+	display:inline;
+}
+
+#menu .menuList {
+}
+
+#menu .menuList ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-top:#ccc  1px;
+}
+
+#menu .menuList ul li {
+	margin:0;
+	padding:0;
+	border-left:solid #ccc 1px;
+	border-right:solid #ccc 1px;
+	border-bottom:solid #ccc 1px;
+	list-style:none;
+}
+
+#menu .menuList ul li a {
+	padding:10px 10px 10px 10px;
+	display:block;
+	color:#333;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#menu .menuList ul li a:hover,
+#menu .menuList ul li a:active {
+	color:#A1DCE4;
+}
+
+#menu .menuList .subMidashi {
+	margin:0 !important;
+	padding:0 !important;
+	border:none;
+	background:#A1DCE4;
+}
+
+#menu .subMidashi .midashiText {
+	border:none;
+}
+
+ /*事業内容・業務実績ページ=====================================*/
+
+.businessItem  {
+	margin:0 0 30px;
+}
+
+/*アクセスページ=====================================*/
+.companyItem {
+	margin:0 0 20px;
+}
+
+.companyMap {
+}
+
+.companyAddress {
+}
